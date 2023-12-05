@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#navigation-bar{
+    position: fixed;
+    width: 100%;
+    top: 0; left: 0; right: 0;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.judul{
+    color: #331D2C;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -15px;
+}
+
+nav ul a{
+    color: #3F2E3E;
+    text-decoration: solid;
+}
+nav ul a:hover{
+    color: #183D3D;
+}
+form{
+    width: 80%;
+    margin: auto;
+}
+h3{
+    text-align: center;
+    font-size: 18px;
+}
+.gambar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: 300px;
+}
+
+.rumus{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+input{
+    width: 50%;
+    height: 20px;
+    margin-top: -10px;
+    border-radius: 3px;
+
+}
+
+.hitung{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.button input{
+    text-align: center;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background: #331D2C;
+    border: 1px;
+    color: white;
+}
+
+.button input:hover{
+    background: #A78295;
+    cursor: pointer;
+}
+
+#atas{
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+#bawah{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik Segitiga</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon website" type="png" href="CSS/Assets/kalku.png">
+</head>
+<body>
+    <header id="navigation-bar">
+        <h1 class="judul">KATIK SEGITIGA</h1>
+        <!-- <p class="judul">Website untuk menghitung Luas dan Keliling Segitiga</p> -->
+        <nav >
+            <ul>
+                <a href="#atas">Luas Segitiga</a>
+                <a href="#bawah">Keliling Segitiga</a>
+            </ul>
+        </nav>
+    </header>
+<form id="atas" onsubmit="return false">
+    <div>
+        <h3>LUAS SEGITIGA</h3>
+    </div>
+    <div class="gambar">
+        <img src="CSS/Assets/gambar.jpg" alt="segitiga">
+    </div>
+    <div>
+        <p>Rumus Luas Segitiga:</p>
+        <p class="rumus">L = 1/2 x a x t</p>
+        <p>Keterangan:</p>
+        <p>L : Luas</p>
+        <p>a : Panjang Alas</p>
+        <p>t : Tinggi</p>
+    </div>
+    <hr>
+    <div class="hitung">
+        <h3>Hitung Luas Segitiga</h3>
+        <label for="alas"> Masukkan Panjang Alas Segitiga:</label> <br>
+        <input type="number" required id="alas" name="alas"> <br>
+
+        <label for="tinggi"> Masukkan Tinggi Segitiga:</label> <br>
+        <input type="number" required id="tinggi" name="tinggi">
+    </div>
+    <div class="button">
+        <input type="submit" value="Hitung" onclick="submitLuas()">
+        <input type="reset" value="Reset" onclick="resetLuas()">
+    </div>
+    <div id="hasilluas"></div>
+</form>
+<hr>
+<form id="bawah" onsubmit="return false">
+    <div>
+        <h3>KELILING SEGITIGA</h3>
+    </div>
+    <div class="gambar">
+        <img src="CSS/Assets/gambar.jpg" alt="segitiga">
+    </div>
+    <div>
+        <p>Rumus Keliling Segitiga:</p>
+        <p class="rumus">K = S1 + S2 + S3 </p>
+        <p>Keterangan:</p>
+        <p>K : Keliling</p>
+        <p>S1 : Sisi A</p>
+        <p>S2 : Sisi B</p>
+        <p>S3 : Sisi C</p>
+    </div>
+    <hr>
+    <div class="hitung">
+        <h3>Hitung Keliling Segitiga</h3>
+        <label for="SisiA"> Masukkan Sisi A:</label> <br>
+        <input type="number" required id="SisiA" name="SisiA"> <br>
+
+        <label for="SisiB"> Masukkan Sisi B:</label> <br>
+        <input type="number" required id="SisiB" name="SisiB"> <br>
+
+        <label for="SisiC"> Masukkan Sisi C:</label> <br>
+        <input type="number" required id="SisiC" name="SisiC"> <br>
+    </div>
+    <div class="button">
+        <input type="submit" value="Hitung" onclick="submitKeliling()">
+        <input type="reset" value="Reset" onclick="resetKeliling()">
+    </div>
+    <div id="hasilkeliling"></div>
+</form>
+<script src="JS/script.js"></script>
+</body>
+</html>
